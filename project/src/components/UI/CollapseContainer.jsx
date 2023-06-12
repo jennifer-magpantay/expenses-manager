@@ -16,7 +16,7 @@ export const CollapseContainer = ({ children, isOpened, setIsOpened }) => {
             id="close"
             type="button"
             text="Close"
-            customClasses="outline align-right"
+            customClasses="outline align-right "
             icon={<X size={16} weight="bold" color="#3479e5" />}
             onClick={() => handleManageheader()}
           />
@@ -31,7 +31,8 @@ export const CollapseContainer = ({ children, isOpened, setIsOpened }) => {
           />
         )}
       </div>
-      <div className="collapse--body">{isOpened && children}</div>
+
+      {isOpened && <div className="collapse--body">{children}</div>}
     </div>
   );
 };

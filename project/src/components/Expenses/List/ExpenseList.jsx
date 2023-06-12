@@ -16,7 +16,7 @@ export const ExpenseList = ({ list, onClick }) => {
               title={title}
               category={category}
               date={createdAt}
-              amount={amount}
+              amount={String(amount)}
               onClick={onClick}
             />
           </li>
@@ -28,5 +28,5 @@ export const ExpenseList = ({ list, onClick }) => {
 
 ExpenseList.propTypes = {
   list: PropTypes.array,
-  map: PropTypes.func,
+  onClick: PropTypes.func,
 };
