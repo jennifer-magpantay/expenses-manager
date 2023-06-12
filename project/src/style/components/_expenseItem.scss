@@ -1,0 +1,51 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+@use "../responsive" as *;
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: gap(2);
+  padding: gap(2);
+  background-color: $white;
+  border: 01px solid $gray-100;
+  border-radius: $border-radius;
+
+  &--aside {
+    padding: gap(1);
+    background-color: $primary-color-800;
+    border-radius: $border-radius;
+
+    &-date,
+    &-value {
+      color: $white;
+      font-weight: $medium;
+    }
+
+    &-date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5;
+    }
+  }
+
+  &--body {
+    flex: auto;
+    &-title,
+    &-category {
+      display: block;
+    }
+
+    &-title {
+      font-weight: $medium;
+    }
+
+    &-category {
+      font-weight: 300;
+    }
+  }
+}

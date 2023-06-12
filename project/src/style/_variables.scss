@@ -1,0 +1,57 @@
+// MAIN COLORS
+$primary-color-800: #3479e5;
+$primary-color-400: #8eb5f1;
+$primary-color-200: #e4edfb;
+$primary-color-100: #f6f9fe;
+
+$secondary-color: #73b172;
+$secondary-color-lg: #daf2d9;
+
+$green-300: #10715e;
+$green-100: #1abc9c;
+
+$red-300: #d12b1a;
+$red-100: #f1978e;
+
+$purple-300: #7d4195;
+$purple-100: #dfcae8;
+
+$orange-300: #e67e22;
+$orange-100: #f3bf91;
+
+// BASE COLORS
+$white: #fafafa;
+$black: #040109; // based on primary color shades
+
+$title: #040109;
+$text: #242424;
+$background: #fafafa;
+
+// https://mdigi.tools/color-shades/#ffffff
+$gray: #808080;
+$gray-dark: #383838;
+$gray-lg: #f0f0f0;
+$gray-800: #242424;
+$gray-700: #383838;
+$gray-600: #6b6b6b;
+$gray-400: #a8a8a8;
+$gray-100: #f0f0f0;
+
+$error: #e36363;
+$disabled: #e3e3ed;
+
+// EFFECTS
+$border-radius: 8px;
+$box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+$box-shadow-primary: 0px 10px 15px -3px rgba(84, 18, 196, 0.1);
+
+// TEXT - FONT WEIGHT
+$regular: 400;
+$medium: 500;
+$bold: 800;
+
+// ICONS
+$icon-x-small: 20px;
+$icon-small: 24px;
+$icon-medium: 40px;
+$icon-large: 48px;

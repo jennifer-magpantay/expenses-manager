@@ -1,0 +1,45 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+@use "../responsive" as *;
+
+form {
+  label,
+  input {
+    display: block;
+  }
+
+  label {
+    margin-top: gap(1);
+  }
+  input {
+    padding: gap(1);
+    border: 01px solid $gray-100;
+    border-radius: $border-radius;
+    outline: 1px solid transparent;
+    outline-offset: 2px;
+    transition: all 0.3s ease;
+
+    &:focus {
+      border-color: $gray-600;
+      outline-color: $gray-600;
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $gray-600;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $gray-600;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $gray-600;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $gray-600;
+}

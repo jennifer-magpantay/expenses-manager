@@ -1,0 +1,71 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+@use "../responsive" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: toRem(8) toRem(24);
+  border: 02px solid transparent;
+  border-radius: $border-radius;
+  font-weight: $medium;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &.cta {
+    background-color: $primary-color-800;
+    color: $white;
+    font-weight: $medium;
+    letter-spacing: 1px;
+
+    &:hover,
+    &:focus {
+      outline-color: $primary-color-800;
+    }
+  }
+
+  &.icon {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    //border: 02px solid transparent;
+    border-radius: 50px;
+
+    &:hover,
+    &:focus {
+      border-color: $gray-800;
+    }
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  &.outline {
+    background-color: transparent;
+    border-color: $primary-color-800;
+    border-radius: 50px;
+    color: $primary-color-800;
+
+    &:hover,
+    &:focus {
+      outline-color: $primary-color-800;
+    }
+  }
+
+  &.align-right {
+    margin-left: auto;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
