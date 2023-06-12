@@ -1,0 +1,12 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+@use "../responsive" as *;
+
+.filter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: gap(1) 0;
+}

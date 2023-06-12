@@ -10,9 +10,10 @@ form {
   }
 
   label {
-    margin-top: gap(1);
+    margin: gap(2) 0 gap(1);
   }
   input {
+    width: 100%;
     padding: gap(1);
     border: 01px solid $gray-100;
     border-radius: $border-radius;
@@ -20,10 +21,18 @@ form {
     outline-offset: 2px;
     transition: all 0.3s ease;
 
+    &:last-of-type {
+      margin-bottom: gap(3);
+    }
+
     &:focus {
       border-color: $gray-600;
       outline-color: $gray-600;
     }
+  }
+
+  .cta {
+    margin: 0 auto;
   }
 }
 

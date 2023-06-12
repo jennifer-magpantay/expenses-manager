@@ -5,11 +5,15 @@
 
 .section {
   width: 100%;
-  max-width: layoutColumn(6);
+  max-width: layoutColumn(10);
   padding: gap(2);
   margin: gap(1) auto;
   border: 01px solid $gray-100;
   border-radius: $border-radius;
+
+  @include for-tablet-landscape-up {
+    max-width: layoutColumn(6);
+  }
 
   .title {
     margin-bottom: gap(1);

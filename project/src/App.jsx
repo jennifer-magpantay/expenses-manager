@@ -3,10 +3,13 @@ import { useState } from "react";
 import { Header } from "./components/UI/Header";
 import { Main } from "./components/UI/Main";
 import { Section } from "./components/UI/Section";
-import { ExpenseForm } from "./components/Expenses/Form/ExpenseForm";
+import { ExpenseForm } from "./components/NewExpenses/Form/ExpenseForm";
 import { CollapseContainer } from "./components/UI/CollapseContainer";
 import { ExpenseList } from "./components/Expenses/List/ExpenseList";
 import { Footer } from "./components/UI/Footer";
+import { ExpenseFilter } from "./components/Expenses/Filter/ExpenseFilter";
+import { NewExpenses } from "./components/NewExpenses/NewExpenses";
+import { Expenses } from "./components/Expenses/Expenses";
 
 const list = [
   {
@@ -18,9 +21,14 @@ const list = [
   },
 ];
 
+/** TODO:
+ * - set graphs
+ * - set filters to render list by year
+ * - set transition to container on collapse/expand
+ */
+
 export const App = () => {
   const [expenses, setExpenses] = useState(list);
-  const [isOpened, setIsOpened] = useState(false);
 
   const saveExpensesValues = (savedExpensesData) => {
     const expenseData = {
@@ -31,7 +39,6 @@ export const App = () => {
     setExpenses((prevExpense) => {
       return [expenseData, ...prevExpense];
     });
-    setIsOpened(false);
   };
 
   const handleDeleteListItem = (event) => {
@@ -41,25 +48,16 @@ export const App = () => {
     );
     setExpenses(filteredList);
   };
+
   return (
     <>
       <Header />
       <Main>
-        <Section id="hero" title="Manage your expenses">
-          <CollapseContainer isOpened={isOpened} setIsOpened={setIsOpened}>
-            <ExpenseForm onSavedValues={saveExpensesValues} />
-          </CollapseContainer>
-        </Section>
-        <Section id="graph" title="Graph">
-          <p>graph about the expenses</p>
-        </Section>
-        <Section id="historic" title="Historic of expenses">
-          <p>List of the expenses</p>
-          <ExpenseList
-            list={expenses}
-            onClick={(event) => handleDeleteListItem(event)}
-          />
-        </Section>
+        <NewExpenses onSavedValues={saveExpensesValues} />
+        <Expenses
+          expenses={expenses}
+          onClick={(event) => handleDeleteListItem(event)}
+        />
       </Main>
       <Footer />
     </>
