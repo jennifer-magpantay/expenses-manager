@@ -2,14 +2,9 @@ import { useState } from "react";
 
 import { Header } from "./components/UI/Header";
 import { Main } from "./components/UI/Main";
-import { Section } from "./components/UI/Section";
-import { ExpenseForm } from "./components/NewExpenses/Form/ExpenseForm";
-import { CollapseContainer } from "./components/UI/CollapseContainer";
-import { ExpenseList } from "./components/Expenses/List/ExpenseList";
-import { Footer } from "./components/UI/Footer";
-import { ExpenseFilter } from "./components/Expenses/Filter/ExpenseFilter";
 import { NewExpenses } from "./components/NewExpenses/NewExpenses";
 import { Expenses } from "./components/Expenses/Expenses";
+import { Footer } from "./components/UI/Footer";
 
 const list = [
   {
@@ -23,8 +18,6 @@ const list = [
 
 /** TODO:
  * - set graphs
- * - set filters to render list by year
- * - set transition to container on collapse/expand
  */
 
 export const App = () => {
