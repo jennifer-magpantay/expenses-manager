@@ -24,13 +24,13 @@ In development.
 Download or clone the project
 
 ```bash
-  git clone https://github.com/jennifer-magpantay/components.git
+  git clone https://github.com/jennifer-magpantay/expenses-manager.git
 ```
 
 After downloading or cloning the repository file, open it and go to the project's folder
 
 ```bash
-  cd file-upload
+  cd expenses-manager
   cd project
 ```
 
@@ -50,7 +50,7 @@ Have fun!
 
 ## Author
 
-Developed by Jennifer Magpantay and designed by [Maksym Kobets](https://dribbble.com/kobmax)
+Developed by Jennifer Magpantay and perfectly explained by by [Maximilian Schwarzmüller](https://twitter.com/maxedapps)
 
 **Reach me out**
 
