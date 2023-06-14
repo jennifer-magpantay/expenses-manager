@@ -19,21 +19,23 @@ export const ExpenseFilter = ({ selectValue, onSelectChange }) => {
 
   return (
     <div className="filter">
-      <label htmlFor="years">Choose a year:</label>
-      <select
-        value={selectValue}
-        name="years"
-        id="years"
-        onChange={(event) => handleSelectChange(event)}
-      >
-        {years
-          .map((year) => (
-            <option value={String(year)} key={year}>
-              {year}
-            </option>
-          ))
-          .reverse()}
-      </select>
+      <label htmlFor="years">Choose a year</label>
+      <div className="select" tabIndex={0}>
+        <select
+          value={selectValue}
+          name="years"
+          id="years"
+          onChange={(event) => handleSelectChange(event)}
+        >
+          {years
+            .map((year) => (
+              <option value={String(year)} key={year}>
+                {year}
+              </option>
+            ))
+            .reverse()}
+        </select>
+      </div>
     </div>
   );
 };
