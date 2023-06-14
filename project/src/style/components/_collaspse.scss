@@ -1,0 +1,16 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+@use "../responsive" as *;
+
+.collapse {
+  &--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .message-form {
+      color: $gray-600;
+    }
+  }
+}

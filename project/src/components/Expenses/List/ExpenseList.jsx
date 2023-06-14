@@ -4,7 +4,9 @@ import { ExpenseItem } from "./ExpenseItem";
 
 export const ExpenseList = ({ list, onClick }) => {
   if (list.length === 0) {
-    return <p>No expenses found for the current year</p>;
+    return (
+      <p className="message-list">No expenses found for the current year</p>
+    );
   }
   return (
     <>

@@ -10,7 +10,12 @@ export const CollapseContainer = ({ children, isOpened, setIsOpened }) => {
   };
   return (
     <div className="collapse" aria-expanded={isOpened}>
-      <div className="collaspse--header">
+      <div className="collapse--header">
+        {isOpened ? (
+          <p className="message-form">Click on button to close expenses form</p>
+        ) : (
+          <p className="message-form">CLick on button to open expense form</p>
+        )}
         {isOpened ? (
           <Button
             id="close"

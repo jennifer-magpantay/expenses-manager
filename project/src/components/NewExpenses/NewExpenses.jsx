@@ -44,13 +44,13 @@ export const NewExpenses = ({ onSavedValues }) => {
               type="text"
               label="Category"
               id="categpory"
-              placeholder="Ex.: grocery"
+              placeholder="Ex.: Grocery"
             />
             <ExpenseInput
               type="text"
               label="Amount"
               id="amount"
-              placeholder="Ex.: 129,23"
+              placeholder="Ex.: 129.29"
             />
           </ExpenseForm>
         </CollapseContainer>

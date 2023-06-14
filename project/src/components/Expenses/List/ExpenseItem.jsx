@@ -23,7 +23,7 @@ export const ExpenseItem = ({ date, id, title, category, amount, onClick }) => {
       </div>
       <Button
         id={id}
-        customClasses="icon"
+        customClasses="icon remove"
         text="Delete expense"
         icon={<X size={24} weight="bold" />}
         onClick={onClick}

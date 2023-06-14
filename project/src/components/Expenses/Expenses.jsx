@@ -24,9 +24,7 @@ export const Expenses = ({ expenses, onClick }) => {
         />
       </Section>
 
-      <Section id="graph" title="Graph">
-        <p>graph about the expenses</p>
-      </Section>
+      {/* <Section id="graph" title="Graph"></Section> */}
 
       <Section id="historic" title="Historic of expenses">
         <ExpenseList list={filteredExpenses} onClick={onClick} />

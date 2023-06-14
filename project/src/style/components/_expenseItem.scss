@@ -14,9 +14,12 @@
   border-radius: $border-radius;
 
   &--aside {
-    padding: gap(1);
+    display: flex;
+    align-items: center;
+    gap: gap(1);
+    padding: gap(1) gap(2);
     background-color: $primary-color-800;
-    border-radius: $border-radius;
+    border-radius: 50px;
 
     &-date,
     &-value {
