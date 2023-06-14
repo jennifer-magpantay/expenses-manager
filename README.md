@@ -4,6 +4,9 @@ A application to register daily expenses.
 
 ## Preview
 
+<img width="48%" alt="Screenshot 2023-06-14 at 17 41 37" src="https://github.com/jennifer-magpantay/expenses-manager/assets/56962997/b4d2f2a5-4228-4e59-be98-dbe744cb721a">
+<img width="48%" alt="Screenshot 2023-06-14 at 17 43 47" src="https://github.com/jennifer-magpantay/expenses-manager/assets/56962997/da6363d2-93f0-414a-84b3-12c4dde0df49">
+
 ## Technologies
 
 - Vite, React, Sass, Phosphor Icons.
